@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import "icon";
+// General Styles
+@import "style";
+@import "comp-menu";
+@import "comp-table";
+@import "comp-modals";
+@import "comp-accordion";
+@import "comp-datepicker";
+@import "comp-multi-select";
+
+.reportRename {
+  // display: none;
+}
+
+.reportsUpload {
+  color: #1952ce !important;
+}
+.report-title input {
+  width: 300px !important;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="assets/main.css" />
+		<script src="assets/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	</head>
+	<body class="">
+
+		<header class="">
+			<nav>
+				<button id="showLeftMenu">MENU</button>
+        <ul class="breadcrumbs">
+          <li><a href="#">Workbench</a></li>
+        </ul>
+        <ul class="rightMenu">
+          <li class="user">Username</li>
+          <li class="logout"><a href="#">Sign Out</a></li>
+          <li class="help"><a href="#">Help</a></li>
+        </ul>
+			</nav>
+		</header>
+		<nav class="menu menu-vertical leftMenu" id="leftMenu">
+			<img src="assets/img/manheim_logo_sm.png"/>
+			<h3>Menu</h3>
+			<a href="#">Home</a>
+			<a href="#">Capture Tools</a>
+			<a href="#">Customer Data Transmissions</a>
+			<a href="#">Inventory Assist</a>
+			<a href="#">Offer Management</a>
+			<a href="reports.html">Reports</a>
+			<a href="#">Sale Setup</a>
+			<a href="#">Feedback [+]</a>
+		</nav>
+
+<div class="container">
+
+<h3>All Saved Reports</h3>
+
+<div class="comp-saved-reports">
+
+	<ul class="tabs">
+		<li class="tab-link" data-tab="tab-1">Reports</li>
+		<li class="tab-link current" data-tab="tab-2">Saved Reports</li>
+	</ul>
+
+	<div id="tab-1" class="tab-content current">
+	<div class="th">
+		<div class="td">Report Name</div>
+		<div class="td">Last Run</div>
+		<div class="td">Report Actions</div>
+		<div class="td">Select All</div>
+	</div>
+		<div class="tr listItem">
+			<div class="td">Icon</div>
+			<div class="td">Report Nickname</div>
+			<div class="td">01/14/17</div>
+			<div class="td reportActions">
+				<div class="td">Edit</div>
+				<div class="td">Rename</div>
+				<div class="td">Duplicate</div>
+				<div class="td"><select></select></div>
+				<div class="td">Check</div>
+			<div>
+		</div>
+	</div>
+	<div id="tab-2" class="tab-content">
+
+
+
+	</div>
+
+</div><!-- //END comp-saved-reports -->
+
+
+		</div><!-- //END Container -->
+		<script src="app.js" charset="utf-8"></script>
+	</body>
+</html>

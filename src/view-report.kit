@@ -1,0 +1,114 @@
+<!-- @import "assets/kit/header.kit" -->
+<div class="container">
+
+<div class="mui-p-t">
+		 <h2 class="show--inline-block mui-m-q-b">Buying Detail Report</h2>
+		 <a href="reports.html" class="mui-button--tertiary pull--right">View Saved Reports</a>
+		 <div class="tester">
+				<h4 class="show--inline">Nickname of Report</h4>
+		 </div>
+
+		 <label class="show--inline mui-m-r">Report Actions:</label>
+		 <a href="create-report.html" class="mui-m-r">Edit</a>
+		 <a href="#" class="modal-toggle">Save</a>
+	</div>
+
+	<div mui-row="gutter--flush">
+		 <div mui-col="1/1" class="">
+				<form action="#">
+					 <select name="<id_name>" id="<id_name>" class="pull--right">
+							<option disabled selected>Export Options</option>
+							<option value="">Email Report</option>
+							<option value="">Export PDF</option>
+							<option value="">Export CSV</option>
+							<option value="">Export XLS</option>
+					 </select>
+				</form>
+		 </div>
+	</div>
+
+	<div mui-row="gutter--flush">
+
+		 <div mui-col="1/1" data-bind="">
+
+			 <div class="accordionSingle">
+		 		<div class="accordion">
+		 		  <div class="accordion-header">
+		 		    Report Filters
+		 		    <i class="accordion-header-icon fa fa-chevron-down" aria-hidden="true"></i>
+		 		  </div>
+		 		  <div class="accordion-body">
+						<div class="report-filter">
+							 <div class="">
+									<h3>Start Date</h3>
+									<h3 class="subheader">Apr 01, 2017</h3>
+							 </div>
+							 <div>
+									<h3>End Date</h3>
+									<h3 class="subheader">Apr 18, 2017</h3>
+						</div>
+							 <div>
+									<h3>Location</h3>
+									<h3 class="subheader">Manheim New Orleans</h3>
+						</div>
+							 <div>
+									<h3>Account Number</h3>
+									<h3 class="subheader">5001324 | WSN SALES INC</h3>
+						</div>
+					</div>
+		 		  </div>
+		 		</div>
+		 </div>
+		 </div>
+	</div>
+
+	<div mui-row="gutter--flush middle">
+		 <div mui-col="1/1" class="align--right mui-m-b">
+				<label for="search-date" class="show--inline-block">
+					 <span data-current-month>Apr</span>
+					 <span data-current-year>2017</span>
+					 <span data-current-time>11:58</span>
+					 <span data-current-setting>am</span>
+					 <span data-current-time-zone>EDT</span>
+				</label>
+				<button type="button" class="reportsUpload mui-button--tertiary mui-button--sm mui-m-l show--inline-block"><i class="icon-reload"></i> Update</button>
+		 </div>
+	</div>
+
+	<div mui-row="gutter--flush">
+		 <div mui-col="1/1">
+				<div class="mui-table__header cf">
+					 <div class="align--right">
+							<!-- <button class="mui-button--secondary mui-button--sm width--auto">Secondary</button>
+							<button class="mui-button--sm width--auto">Primary</button> -->
+					 </div>
+				</div>
+				<table class="mui-table">
+					 <thead>
+							<tr>
+								 <th>Column 1</th>
+								 <th>Column 2</th>
+								 <th>Column 3</th>
+							</tr>
+					 </thead>
+					 <tbody>
+							<tr>
+								 <td>Data</td>
+								 <td>Data</td>
+								 <td>Data</td>
+							</tr>
+							<tr>
+								 <td>Data</td>
+								 <td>Data</td>
+								 <td>Data</td>
+							</tr>
+					 </tbody>
+				</table>
+		 </div>
+	</div>
+
+		</div><!-- //END Container -->
+<!-- @import "assets/kit/update-name-modal.kit" -->
+		<script src="assets/app.js" charset="utf-8"></script>
+	</body>
+</html>

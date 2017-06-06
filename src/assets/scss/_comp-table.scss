@@ -1,0 +1,134 @@
+.table .fa-chevron-down {
+	font-size: 10px;
+line-height: 20px;
+margin-left: 5px;
+}
+.table a {
+	color: #28509B;
+}
+.table a:hover {
+	text-decoration: underline;
+}
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+	margin: 30px 0px;
+  color: #333;
+  .th {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: 500;
+    font-size: 16px;
+		padding: 0px 0px 5px;
+    .td {
+      display: flex;
+      font-size: 16px;
+      text-align: left;
+      flex: 1;
+    }
+		.report-title {
+			max-width: 380px;
+			min-width: 320px;
+		}
+		.report-date{
+			max-width: 100px;
+		}
+		.report-actions {
+			padding-right: 10px;
+			max-width: 400px;
+		}
+    .report-check {
+      max-width: 95px;
+      position: relative;
+      input {
+        position: relative;
+        margin-left: 5px;
+				top: 3px;
+      }
+    }
+  }
+  .tr {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px 0px;
+    border-top: solid 1px #ddd;
+    .td {
+      display: flex;
+      font-size: 14px;
+      text-align: left;
+      flex: 1;
+			align-self: center;
+    }
+		.report-title {
+			max-width: 380px;
+			min-width: 320px;
+			i {
+				position: relative;
+				font-size: 18px;
+				top: 1px;
+				margin-right: 5px;
+			}
+		}
+		.report-date{
+			max-width: 100px;
+		}
+		.report-actions {
+			display: flex;
+			justify-content: space-between;
+			padding-right: 10px;
+			max-width: 400px;
+			align-items: center;
+		}
+		.report-check {
+			max-width: 22px;
+			margin-left: auto;
+		}
+	}
+}
+
+// @media (max-width: 768px) {
+//   .table {
+//     display: flex;
+//     flex-flow: row nowrap;
+//     color: white;
+//     &__head {
+//       display: flex;
+//       flex-flow: column wrap;
+//       width: 40%;
+//       background: #e74c3c;
+//       .th {
+//         display: flex;
+//         flex-flow: column wrap;
+//         font-weight: 500;
+//         font-size: 16px;
+//         padding: .5em;
+//         text-transform: uppercase;
+//         letter-spacing: 1px;
+//         .td {
+//           display: flex;
+//           font-size: 14px;
+//           width: 100%;
+//           i {
+//             margin-left: 5px;
+//             font-size: 18px;
+//           }
+//         }
+//       }
+//     }
+//     &__rows {
+//       display: flex;
+//       flex-flow: column wrap;
+//       width: 60%;
+//       .tr {
+//         display: flex;
+//         flex-flow: column wrap;
+//         padding: .5em;
+//         .td {
+//           display: flex;
+//           font-size: 14px;
+//           width: 100%;
+//         }
+//       }
+//     }
+//   }
+// }

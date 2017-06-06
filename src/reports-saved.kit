@@ -1,0 +1,97 @@
+<!-- @import "assets/kit/header.kit" -->
+<div class="container">
+<div class="mui-p-t">
+<h2>All Saved Reports</h2>
+</div>
+<div class="comp-saved-reports">
+
+	<ul class="tabs">
+		<li class="tab-link" data-tab="tab-1">Reports</li>
+		<li class="tab-link current" data-tab="tab-2">Saved Reports</li>
+	</ul>
+
+	<div id="tab-1" class="tab-content">
+
+	</div>
+	<div id="tab-2" class="tab-content current">
+
+		<div class="table">
+		    <div class="table__head">
+		      <div class="th">
+		        <div class="td report-title">Report Name <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+		        <div class="td report-date">Last Run <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+		        <div class="td report-actions">Report Actions</div>
+		        <div class="td report-check">Select All <input id="checkBox" type="checkbox"></div>
+		      </div>
+		    </div>
+		    <div class="table__rows">
+					<div class="tr reportGroup" id="duplicater">
+		        <div class="td report-title">
+							<i class="icon-files-empty mui-m-r"></i>
+							<a href="view-report.html" class="">Newly Saved Report</a>
+						</div>
+		        <div class="td report-date">06/01/17</div>
+		        <div class="td report-actions">
+							<a href="create-report.html">Edit</a>
+							<a href="reports-rename.html" class=""> Rename</a>
+							<a href="" id="duplicateRow" onclick="duplicate()">Duplicate</a>
+		<select>
+		  <option value="Export Options">Export Option</option>
+			<option value="">Email Report</option>
+			<option value="">Export PDF</option>
+			<option value="">Export CSV</option>
+			<option value="">Export XLS</option>
+		</select></div>
+		        <div class="td report-check"><input id="checkBox" type="checkbox" onclick="$('.button.delete').removeAttr('disabled');"></div>
+		      </div>
+		      <div class="tr reportGroup" id="duplicater">
+		        <div class="td report-title">
+							<i class="icon-files-empty mui-m-r"></i>
+							<a href="view-report.html" class="">Report Nickname Here</a>
+						</div>
+		        <div class="td report-date">11/15/17</div>
+		        <div class="td report-actions">
+							<a href="create-report.html">Edit</a>
+							<a href="reports-rename.html" class=""> Rename</a>
+							<a href="" id="duplicateRow" onclick="duplicate()">Duplicate</a>
+		<select>
+			<option value="Export Options">Export Option</option>
+			<option value="">Email Report</option>
+			<option value="">Export PDF</option>
+			<option value="">Export CSV</option>
+			<option value="">Export XLS</option>
+		</select></div>
+		        <div class="td report-check"><input id="checkBox" type="checkbox" onclick="$('.button.delete').removeAttr('disabled');"></div>
+		      </div>
+					<div class="tr reportDuplicate">
+						<div class="td report-title">
+							<i class="icon-files-empty mui-m-r"></i>
+							<a href="view-report.html" class="">Report Nickname Here</a>
+						</div>
+						<div class="td report-date">11/15/17</div>
+						<div class="td report-actions">
+							<a href="create-report.html">Edit</a>
+							<a href="reports-rename.html" class="">Rename</a>
+							<a href="#" class="duplicate-on-click">Duplicate</a>
+		<select>
+			<option value="Export Options">Export Option</option>
+			<option value="">Email Report</option>
+			<option value="">Export PDF</option>
+			<option value="">Export CSV</option>
+			<option value="">Export XLS</option>
+		</select></div>
+						<div class="td report-check"><input id="checkBox" type="checkbox" onclick="$('.button.delete').removeAttr('disabled');"></div>
+					</div>
+		    </div>
+		</div>
+		<button class="button delete pull--right" disabled onclick="$('.reportDublicate').remove()";>Delete</button>
+		</div>
+
+</div><!-- //END comp-saved-reports -->
+
+
+		</div><!-- //END Container -->
+<!-- @import "assets/kit/update-name-modal.kit" -->
+		<script src="assets/app.js" charset="utf-8"></script>
+	</body>
+</html>
