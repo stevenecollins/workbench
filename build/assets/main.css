@@ -5247,12 +5247,9 @@ a:visited {
           transition-delay: 0s; }
 
 .modal-wrapper {
-  position: absolute;
+  position: relative;
   z-index: 9999;
-  top: 6em;
-  left: 50%;
-  width: 32em;
-  margin-left: -16em;
+  margin: 6em auto 0px;
   background-color: #fff;
   box-shadow: 0 0 1.5em rgba(13, 12, 12, 0.5);
   border-radius: 3px; }
@@ -5318,6 +5315,34 @@ a:visited {
 
 .modal-content > *:last-child {
   margin-bottom: 0; }
+
+.saveReport .modal-wrapper {
+  max-width: 420px; }
+
+.snowTicket .modal-wrapper {
+  max-width: 650px; }
+
+[data-mui-version] .dialog [mui-row~="gutter--flush"], [data-mui-version] .dialog [data-mui-row~="gutter--flush"], [data-mui-version] .dialog [mui-row~="gutter"], [data-mui-version] .dialog [data-mui-row~="gutter"] {
+  padding-left: 2rem; }
+
+[data-mui-version] .dialog [mui-row~="gutter--flush"], [data-mui-version] .dialog [data-mui-row~="gutter--flush"] {
+  margin-right: -2rem;
+  margin-left: -2rem; }
+
+[data-mui-version] .dialog [mui-row~="gutter--flush"] > [mui-col], [data-mui-version] .dialog [data-mui-row~="gutter--flush"] > [mui-col], [data-mui-version] .dialog [mui-row~="gutter--flush"] > [data-mui-col], [data-mui-version] .dialog [data-mui-row~="gutter--flush"] > [data-mui-col], [data-mui-version] .dialog [mui-row~="gutter"] > [mui-col], [data-mui-version] .dialog [mui-row~="gutter"] > [data-mui-col], [data-mui-version] .dialog [data-mui-row~="gutter"] > [mui-col], [data-mui-version] .dialog [data-mui-row~="gutter"] > [data-mui-col] {
+  padding-right: 2rem; }
+
+[data-mui-version] .dialog fieldset {
+  margin: 0;
+  border: none;
+  padding: 0; }
+  [data-mui-version] .dialog fieldset legend {
+    margin-top: 0; }
+  [data-mui-version] .dialog fieldset [class*="close-dialog"] {
+    color: #babcbd;
+    margin-top: -.75rem; }
+    [data-mui-version] .dialog fieldset [class*="close-dialog"]:hover {
+      color: #333; }
 
 .accordionGrp .accordion {
   font-family: Lato;

@@ -1,0 +1,91 @@
+<div class="modal snowTicket">
+  <div class="modal-overlay modal-toggle2"></div>
+  <div class="modal-wrapper modal-transition">
+    <div class="modal-header">
+      <i class="modal-close modal-toggle2 icon-cross"></i>
+      <h2 class="modal-heading">Report an issue on <span>PAGE NAME</span></h2>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-content" data-mui-version="0.28.0">
+<form>
+        <div mui-row="gutter--flush">
+          <div mui-col="1/1 13/24-lg">
+
+            <div class="mui-m-b">
+              <label for="problemDescription">Please describe the problem you are facing.</label>
+              <textarea class="width--full" name="problemDescription" id="problemDescription" rows="4"></textarea>
+            </div>
+            <!--  -->
+            <div class="mui-m-b">
+              <label for="">*Is it a sale day?</label>
+              <input type="radio" name="" id="" />
+              <label for="" class="show--inline-block mui-m-r">Yes</label>
+              <input type="radio" />
+              <label for="" class="show--inline-block">No</label>
+            </div>
+            <!--  -->
+            <div class="mui-m-b">
+              <label for="">*Is it impacting a sale day activity?</label>
+              <input type="radio" name="" id="" />
+              <label for="" class="show--inline-block mui-m-r">Yes</label>
+              <input type="radio" />
+              <label for="" class="show--inline-block">No</label>
+            </div>
+            <!--  -->
+            <div class="mui-m-b">
+              <label for="">*Is it impacting a sale day activity?</label>
+              <input type="radio" name="" id="" />
+              <label for="" class="show--inline-block mui-m-r">Yes</label>
+              <input type="radio" />
+              <label for="" class="show--inline-block">No</label>
+            </div>
+            <div class="mui-m-b">
+              <label for="number-users">Please enter the number of users impacted.</label>
+              <input type="text" name="number-users" id="number-users" class="width--full mui-m-b" />
+
+              <label for="vin-number">Auction</label>
+              <input type="text" name="auction-name" id="vin-number" class="width--full mui-m-b" />
+             </div>
+
+          </div>
+          <div mui-col="1/1 11/24-lg">
+
+            <label for="">*Is the issue for a dealer or vehicle?</label>
+            <!-- Radio Selects -->
+            <input type="radio" name="dealer-vehicle" id="dealer-vehicle-yes" />
+            <label class="show--inline-block mui-m-h-r" for="dealer-vehicle-yes">Yes</label>
+            <input class="mui-m-h-l" type="radio" name="dealer-vehicle" id="dealer-vehicle-no" />
+            <label class="show--inline-block mui-m-h-r" for="vehicle-dealer-no">No</label>
+            <!-- Dealer Number -->
+            <label for="dealer-number">Dealer Number</label>
+            <input type="text" name="dealer-number" id="dealer-number" class="width--full mui-m-b" />
+            <!-- Dealer Name -->
+            <label for="dealer-name">Dealer Name</label>
+            <input type="text" name="dealer-name" id="dealer-name" class="width--full mui-m-b" />
+            <!-- VIN Number -->
+            <label for="vin-number">VIN Number</label>
+            <input type="text" name="vin-number" id="vin-number" class="width--full mui-m-b" />
+            <!-- VIN Number -->
+            <label for="work-order">Work order/Invoice #</label>
+            <input type="text" name="work-order" id="work-order" class="width--full mui-m-b" />
+
+          </div>
+        </div>
+
+        <div mui-row="gutter--flush" class="mui-p-b">
+          <div mui-col="1/1"  class="form__controls">
+            <button class="mui-button--secondary mui-m-q-b">Upload</button>
+
+            <p for="">Allowed extensions(<span class="error">jpeg</span>, <span class="error">jpg</span>, <span class="error">gif</span> and <span class="error">png</span>)</p>
+          </div>
+        </div>
+</form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-toggle2">Cancel</a>
+      <button class="modal-toggle2" onclick="location.href = '#';">Submit</button>
+    </div>
+  </div>
+</div>

@@ -18,7 +18,12 @@ $(document).ready(function(){
 // Modal
 $('.modal-toggle').on('click', function(e) {
   e.preventDefault();
-  $('.modal').toggleClass('is-visible');
+  $('.saveReport').toggleClass('is-visible');
+});
+// Modal Snow Ticket
+$('.modal-toggle2').on('click', function(e) {
+  e.preventDefault();
+  $('.snowTicket').toggleClass('is-visible');
 });
 
 // Accordion
@@ -42,7 +47,36 @@ $('.modal-rename').on('blur', function(e) {
   window.location.href = "reports-rename-results.html";
 });
 
+// Reports Folder accordion Filetree
+$("fileTreeWrapper").find(".tree").fadeOut(0);
 
+ $(".tree-title").click(function() {
+   setStatus($(this));
+ });
+
+  /* Set the list opened or closed */
+  function setStatus(node) {
+   var elements = [];
+   $(node).each(function() {
+     elements.push($(node).nextAll());
+   });
+   for (var i = 0; i < elements.length; i++) {
+     if (elements[i].css("display") == "none") {
+       elements[i].fadeIn();
+     } else {
+       elements[i].fadeOut(0);
+     }
+   }
+   if (elements[0].css("display") != "none") {
+     $(node).addClass("active");
+   } else {
+     $(node).removeClass("active");
+   }
+  }
+
+
+
+// Forms Inputs on create reports
 $(function() {
     'use strict';
 
@@ -58,8 +92,8 @@ $(function() {
         //slaveItems: [getItem()]
       });
 
-      console.log('%c !!!', 'color: green');
-      console.log(node.mui_multiselect('getOptions').slaveItems || node.mui_multiselect('getSlaveItems').toArray());
+      // console.log('%c !!!', 'color: green');
+      // console.log(node.mui_multiselect('getOptions').slaveItems || node.mui_multiselect('getSlaveItems').toArray());
 
       setTimeout(function () {
         //node.mui_multiselect('setSlaveItems', vm.selectedItems);
@@ -89,13 +123,13 @@ $(function() {
         var itemsToAdd = [ getItem(), getItem() ];
 
         if (toMaster === false) {
-            console.log('old', $ms.mui_multiselect('getSlaveItems'));
+            // console.log('old', $ms.mui_multiselect('getSlaveItems'));
             $ms.mui_multiselect('appendSlaveItems', itemsToAdd);
-            console.log('new', $ms.mui_multiselect('getSlaveItems'));
+            // console.log('new', $ms.mui_multiselect('getSlaveItems'));
         } else {
             $ms.mui_multiselect('appendMasterItems', itemsToAdd);
         }
-        console.log('--+', $ms.mui_multiselect('getOptions')[0]);
+        // console.log('--+', $ms.mui_multiselect('getOptions')[0]);
     }
 
     _postKnockoutRender($ms, viewModel);
@@ -114,22 +148,19 @@ $(function() {
     addTo(false);
 
 
-    console.log('<<', $ms.mui_multiselect('getMasterItems'));
-    console.log('<<', $ms.mui_multiselect('getSlaveItems'));
-    $ms.mui_multiselect('replaceOptions', { 'searchStatus': null });
-    console.log('<<', $ms.mui_multiselect('getMasterItems'));
-    console.log('<<', $ms.mui_multiselect('getSlaveItems'));
-
-
-    var mi = $ms.mui_multiselect('getMasterItems');
-    console.log(mi);
-    console.log(mi.length);
-    console.log(mi.size());
-    console.log(mi.toArray());
-    console.log('---');
-
-
-
+    // console.log('<<', $ms.mui_multiselect('getMasterItems'));
+    // console.log('<<', $ms.mui_multiselect('getSlaveItems'));
+    // $ms.mui_multiselect('replaceOptions', { 'searchStatus': null });
+    // console.log('<<', $ms.mui_multiselect('getMasterItems'));
+    // console.log('<<', $ms.mui_multiselect('getSlaveItems'));
+    //
+    //
+    // var mi = $ms.mui_multiselect('getMasterItems');
+    // console.log(mi);
+    // console.log(mi.length);
+    // console.log(mi.size());
+    // console.log(mi.toArray());
+    // console.log('---');
 
     setTimeout(function () {
       _delayedAdd();
