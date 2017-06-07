@@ -37,12 +37,12 @@
 }
 
 .modal-wrapper {
-  position: absolute;
+  position: relative;
   z-index: 9999;
-  top: 6em;
-  left: 50%;
-  width: 32em;
-  margin-left: -16em;
+  margin: 6em auto 0px;
+  // left: 50%;
+  // width: 32em;
+  // margin-left: -16em;
   background-color: #fff;
   box-shadow: 0 0 1.5em hsla(0, 5%, 5%, 0.5);
   border-radius: 3px;
@@ -112,4 +112,49 @@
 
 .modal-content > *:last-child {
   margin-bottom: 0;
+}
+
+.saveReport .modal-wrapper {
+  max-width: 420px;
+}
+.snowTicket .modal-wrapper {
+  max-width: 650px;
+}
+
+
+// Add Custom classes for Snow Ticket modal
+// Add to local WB CSS, Should be added to MUI-Framework as,well.
+[data-mui-version] .dialog {
+
+  [mui-row~="gutter--flush"], [data-mui-row~="gutter--flush"], [mui-row~="gutter"], [data-mui-row~="gutter"] {
+    padding-left: 2rem;
+  }
+
+  [mui-row~="gutter--flush"], [data-mui-row~="gutter--flush"] {
+    margin-right: -2rem;
+    margin-left: -2rem;
+  }
+
+  [mui-row~="gutter--flush"] > [mui-col], [data-mui-row~="gutter--flush"] > [mui-col], [mui-row~="gutter--flush"] > [data-mui-col], [data-mui-row~="gutter--flush"] > [data-mui-col], [mui-row~="gutter"] > [mui-col], [mui-row~="gutter"] > [data-mui-col], [data-mui-row~="gutter"] > [mui-col], [data-mui-row~="gutter"] > [data-mui-col] {
+    padding-right: 2rem;
+  }
+
+  fieldset {
+    margin: 0;
+    border: none;
+    padding: 0;
+
+    legend {
+      margin-top: 0;
+    }
+
+    [class*="close-dialog"] {
+      color: #babcbd;
+      margin-top: -.75rem;
+
+      &:hover {
+        color: #333;
+      }
+    }
+  }
 }
