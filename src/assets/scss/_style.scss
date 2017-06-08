@@ -1,5 +1,7 @@
-$break-small: 320px;
-$break-large: 1200px;
+$break-small: 400px;
+$break-medium: 792px;
+$break-large: 1000px;
+$break-xlarge: 1200px;
 
 
 /* Reset */
@@ -45,7 +47,12 @@ a:hover {
 .container {
 	margin: 80px auto;
 	max-width: 960px;
-
+	@media screen and (max-width: $break-large) {
+		padding: 0px 30px;
+	}
+	@media screen and (max-width: $break-medium) {
+		margin: 50px auto;
+	}
 }
 
 h3 {
