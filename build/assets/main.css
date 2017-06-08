@@ -4880,6 +4880,12 @@ a:hover {
 .container {
   margin: 80px auto;
   max-width: 960px; }
+  @media screen and (max-width: 1000px) {
+    .container {
+      padding: 0px 30px; } }
+  @media screen and (max-width: 792px) {
+    .container {
+      margin: 50px auto; } }
 
 h3 {
   font-size: 28px;
@@ -5791,6 +5797,77 @@ a:visited {
 
 .mui-multiselect__controls .icon-chevron-right, .mui-multiselect__controls .icon-chevron-left {
   color: #34689a; }
+
+.fileTreeWrapper .filetree {
+  margin: 30px 0px; }
+
+.fileTreeWrapper .main-tree {
+  margin: 0;
+  text-align: left;
+  border-top: solid 1px #ddd;
+  padding: 10px 15px; }
+
+.fileTreeWrapper .tree-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 36px; }
+  .fileTreeWrapper .tree-title div:last-child {
+    margin-left: 2px; }
+
+.fileTreeWrapper .tree-title.active:before {
+  content: "\e9d6" !important; }
+
+.fileTreeWrapper .tree-title:before {
+  content: "\e9d4";
+  font-family: Manheim;
+  display: inline-block;
+  width: 40px;
+  color: #003468 !important;
+  font-size: 32px; }
+
+.fileTreeWrapper .tree li.tree-title {
+  font-size: 16px;
+  line-height: 24px; }
+
+.fileTreeWrapper .tree li.tree-title:before {
+  font-size: 16px !important;
+  width: 20px;
+  margin-left: 0px; }
+
+.fileTreeWrapper .tree-title {
+  list-style-type: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #1952CE; }
+
+.fileTreeWrapper .tree-item:before {
+  content: "\e99f";
+  font-family: Manheim;
+  margin-left: 20px;
+  font-size: 14px;
+  display: inline-block;
+  color: #003468 !important; }
+
+.fileTreeWrapper .tree-item {
+  cursor: pointer;
+  list-style-type: none;
+  display: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #1952CE;
+  font-size: 14px; }
+  .fileTreeWrapper .tree-item a {
+    margin-left: 5px; }
+  .fileTreeWrapper .tree-item span {
+    color: #777;
+    margin-left: 40px;
+    font-size: 12px; }
 
 .reportsUpload {
   color: #1952ce !important; }
